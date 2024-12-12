@@ -8,7 +8,7 @@ const Saved = () => {
   const {save} = useSelector((state) => state.allSave);
 
   return (
-    <div className='flex flex-col my-14'>
+    <div className='flex flex-col my-[70px]'>
       <h1 className='font-Dancing text-2xl media769:text-5xl text-center mt-4'>My Recipes</h1>
 
       <div className='my-24'>

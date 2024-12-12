@@ -36,14 +36,16 @@ const Footer = () => {
         <div className='flex flex-col'>
           <div className='p-1 sm:p-4'>
             <h1 className='text-base sm:text-lg font-bold text-[#341c10]'>About Us</h1>
-            <form className='w-96'>
+            <form className='flex flex-col w-96'>
               <label className='text-[12px] sm:text-base'>Welcome to our website.</label>
-              <input 
-                className='text-[10px] sm:text-base p-1 sm:p-2 w-24 sm:w-52 rounded-sm sm:rounded-lg'
-                type='text'
-                placeholder='Enter your Email'
-              />
-              <button className='bg-slate-400 text-[10px] sm:text-base p-1 sm:p-2 rounded-sm sm:rounded-lg m-2 font-semibold'>Send</button>
+              <div>
+                <input 
+                  className='text-[10px] sm:text-base p-1 sm:p-2 w-24 sm:w-52 rounded-sm sm:rounded-lg'
+                  type='text'
+                  placeholder='Enter your Email'
+                />
+                <button className='bg-slate-400 text-[10px] sm:text-base p-1 sm:p-2 rounded-sm sm:rounded-lg m-2 font-semibold'>Send</button>
+              </div>
             </form>
           </div>
           <div className='flex flex-col p-1 sm:p-4'>   

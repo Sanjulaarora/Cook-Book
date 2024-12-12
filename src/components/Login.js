@@ -25,7 +25,7 @@ const Login = () => {
   }
 
   return (
-    <div>
+    <div className='my-24'>
       <form onSubmit={handleLoginSubmit} 
         className='flex flex-col justify-center items-center space-y-5 my-8 h-[284px] sm:h-[364px] media769:h-96 w-[264px] sm:w-[364px] media769:w-96 mx-auto rounded-lg shadow-2xl'>
         <div className='flex flex-col p-3'>

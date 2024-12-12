@@ -48,17 +48,21 @@ const Main = () => {
   }, [dishes, search, selectedCategory]);
 
   return (
-    <main className='flex flex-col space-y-4 sm:space-y-16 my-4 sm:my-8'>
+    <main className='flex flex-col space-y-4 sm:space-y-14 my-4 sm:my-8'>
+      <p className='w-[280px] sm:w-[420px] media769:w-[768px] media1025:w-[1024px] mx-auto font-Dancing text-center text-orange-800 sm:text-2xl'>All you need is love. But a little good food now and then does't hurt.</p>
+
       <img className='w-[280px] sm:w-[420px] p-1 media769:w-[768px] media1025:w-[1024px] mx-auto' src={mainImage} alt='main' loading='lazy'/>
 
-      <div className='w-[280px] sm:w-[420px] media769:w-[768px] media1025:w-[1024px] mx-auto bg-gradient-to-r from-[#b97f5f] to-[#c6ac9e] p-2 sm:p-3'>
-        <p className='text-center font-Dancing p-1 text-xl sm:text-2xl media769:text-5xl mt-4'>Here you go with the Dishes</p>
+      <p className='w-[280px] sm:w-[420px] media769:w-[768px] media1025:w-[1024px] mx-auto font-Dancing text-center text-orange-800 sm:text-2xl'>A Recipe has no soul. You, as the cook, must bring soul to the recipe.</p>
 
-        <div className='flex justify-around itmes-center'>
-          <form className='flex items-center space-x-1 sm:space-x-2 rounded-sm sm:rounded-lg p-[5px] sm:p-2 w-3/4 bg-slate-200 mt-2'>
+      <div className='w-[280px] sm:w-[420px] media769:w-[768px] media1025:w-[1024px] mx-auto bg-gradient-to-r from-[#b97f5f] to-[#c6ac9e] p-2 sm:p-3'>
+        <p className='text-center font-Dancing p-1 text-xl sm:text-2xl media769:text-4xl mt-6'>Here you go with the Dishes</p>
+
+        <div className='flex justify-around items-center mt-8'>
+          <form className='flex items-center space-x-1 sm:space-x-2 rounded-sm sm:rounded-lg p-[5px] sm:p-2 w-3/4 bg-white'>
             <FaMagnifyingGlass className='mx-auto'/>
             <input 
-              className='rounded-sm sm:rounded-lg text-[10px] sm:text-base p-1 sm:p-2 w-10/12 mx-auto bg-slate-200 outline-none'
+              className='rounded-sm sm:rounded-lg text-[10px] sm:text-base p-1 sm:p-2 w-10/12 mx-auto outline-none'
               type='text'
               placeholder='Search your dish :)'
               value={search}
@@ -66,7 +70,7 @@ const Main = () => {
             />
           </form>
           <select 
-            className='text-[8px] sm:text-[12px] rounded-md md:p-1 outline-none w-12 sm:w-[90px] h-9 sm:h-14 mt-[9px]' 
+            className='text-[8px] sm:text-[12px] rounded-md md:p-1 outline-none w-12 sm:w-[90px] h-9 sm:h-14' 
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
           >

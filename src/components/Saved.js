@@ -26,7 +26,7 @@ const Saved = () => {
           </ol> 
           {!(save.length) &&
             <div>
-              <p className='text-xs'>Looks like your have not saved any dish 🤷🏽‍♀️.</p>
+              <p className='w-[280px] sm:w-[420px] media769:w-[768px] media1025:w-[1024px] mx-auto h-[80px] sm:h-20 media769:h-24 py-10 bg-gradient-to-r from-[#b97f5f] to-[#c6ac9e] rounded-md text-white text-xs sm:text-base text-center'>Looks like your have not saved any dish 🤷🏽‍♀️.</p>
             </div>
           }
         </div>
